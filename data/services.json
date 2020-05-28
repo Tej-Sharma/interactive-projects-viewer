@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "name": "Strategy"
+    },
+    {
+      "name": "Engineering"
+    },
+    {
+      "name": "Engineering"
+    },
+    {
+      "name": "Infrastructure"
+    }
+  ]
+}
