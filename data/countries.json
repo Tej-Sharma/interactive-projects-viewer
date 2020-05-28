@@ -1,0 +1,16 @@
+{
+  "countries": [
+    {
+      "name": "France"
+    },
+    {
+      "name": "Italie"
+    },
+    {
+      "name": "Espagne"
+    },
+    {
+      "name": "Portugal"
+    }
+  ]
+}
