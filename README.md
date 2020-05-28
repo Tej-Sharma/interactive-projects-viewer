@@ -4,11 +4,11 @@ This test is a part of our hiring process at Kisso for Full Stack Engineers.
 
 **Feel free to apply! Drop us a line with your LinkedIn/GitHub/Twitter at squad@kissohq.com**
 
-# Instructions
+# 📋 Instructions
 
 Both **Frontend** and **Backend** tests should be done.
 
-## Submission
+## 📨 Submission
 
 Choose between one of these two solutions for the submission.
 
@@ -30,13 +30,13 @@ Choose between one of these two solutions for the submission.
 
 4. Once your code is ready, send us the link to your repository
 
-## Time allotted for completion
+## ⏳ Time allotted for completion
 
 There aren’t any formal requirements for how long this challenge should take you, complete it in ten minutes or ten hours, it’s up to you. We suggest keeping it to a maximum of eight hours.
 
 ---
 
-# Frontend
+# 👁 Frontend
 
 ## Summary
 
@@ -62,7 +62,7 @@ To give you an idea, here is an example of what the Map could look like:
 
 ![map](/doc/map.jpg)
 
-## Data
+## 📔 Data
 
 In the `data` repository at the root of the project, you'll find three json files holding the data. You can use the json files as a database replacement.
 
@@ -70,7 +70,7 @@ In the `data` repository at the root of the project, you'll find three json file
 - countries
 - services
 
-## Installation
+## 🛠 Installation
 
 We're using [yarn](https://yarnpkg.com) here:
 
@@ -79,18 +79,18 @@ yarn install
 yarn start
 ```
 
-## Stack
+## 📦 Stack
 
 - [create-react-app](https://create-react-app.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-## Requirements
+## 📜 Requirements
 
 - use the [react-simple-maps](https://www.react-simple-maps.io/}) map component
 - Responsive UI
 - Unit tests
 
-## Bonus
+## 🎉 Bonus
 
 - Integration/E2E tests
 - Nice UI/UX
@@ -98,7 +98,7 @@ yarn start
 
 ---
 
-# Backend
+# 🗃 Backend
 
 ## Summary
 
@@ -108,11 +108,11 @@ The goal of this test is to make you code a small Express.js app. We have prepar
 
 Update both the React and the Express app so that the data are now handled and provided by the backend app instead of the Json files. The data should be store in a database (PostgreSQL or mongoDB), you are free to decide how the database schema should be structured.
 
-## Stack
+## 📦 Stack
 
 - [Express.js](https://expressjs.com/)
 - [TypeORM](https://typeorm.io/) + PostgreSQL `or` [mongoose](https://mongoosejs.com/) + MongoDB
 
-## Bonus
+## 🎉 Bonus
 
 - Impress us!
