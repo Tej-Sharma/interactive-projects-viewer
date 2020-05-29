@@ -56,7 +56,7 @@ The app will have just one page, the one showcasing the projects on the map.
 - Clicking outside an opened tooltip, should close it right away.
 
 - You cannot have multiple tooltip opened at the same time.
-  In addition to the map, there should be on the page a way to filter the projects in the tooltips by the kind of service provided (Strategy, Infrastructure, Engineering, Design). So if the service `Engineering` is selected, only Engineering project should be visible when a country's projects are displayed.
+  In addition to the map, there should be on the page a way to filter the projects in the tooltips by the kind of service provided (Strategy, Infrastructure, Engineering, Design). So if the service `Engineering` is selected, only Engineering projects should be visible when a country's projects are displayed.
 
 To give you an idea, here is an example of what the Map could look like:
 
