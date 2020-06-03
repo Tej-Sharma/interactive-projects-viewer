@@ -1,25 +1,37 @@
 {
   "name": "fullstack-test",
   "version": "1.0.0",
-  "description": "Technical test for Full Stack Engineer position at Kisso",
+  "description": "Response for technical test for Full Stack Engineer position at Kisso",
   "repository": "https://github.com/KissoHQ/fullstack-test",
-  "author": "Nazer Aminou <nazer@kissohq.com>",
+  "author": "Tejas Sharma <trollgenstudios@gmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.0",
+    "bootstrap": "^4.5.0",
     "express": "^4.17.1",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-simple-maps": "^2.1.2",
+    "tailwindcss": "^1.4.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:css": "postcss src/styles/main.css -o src/index.css",
+    "watch:css": "postcss src/styles/main.css -o src/index.css -w",
+    "start": "npm-run-all -p watch:css start-js",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build:css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "postcss-nested": "^4.2.1"
   }
 }
