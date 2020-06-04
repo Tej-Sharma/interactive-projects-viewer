@@ -32,7 +32,7 @@ cd ..
 yarn install
 ```
 
-Then, simply startup both the frontend and the backend, and the app is good to go
+Then, simply startup both the frontend and the backend (just make sure to start the backend before the frontend or else you will have to refresh the frontend once), and the app is good to go
 ```
 cd backend
 node server
