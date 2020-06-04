@@ -65,7 +65,7 @@ export class MapDisplay extends Component {
                     overlay={this.popover}
                   >
                     <Geography
-                      id={geo.properties.geounit} // Set the ID for debugging
+                      className={geo.properties.geounit} // Set the ID for debugging
                       key={geo.rsmKey}
                       geography={geo}
                       fill={
@@ -109,7 +109,7 @@ export class MapDisplay extends Component {
                                   </p>
                                 ))
                               ) : (
-                                <p> There are no projects for this country. </p>
+                                <p> No projects were found for this country. </p>
                               )}
                             </Popover.Content>
                           </Popover>

@@ -3,16 +3,19 @@ import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import MainPage from "../components/main_page/MainPage";
 
-// Main Page's unit testing
+// Main Page's unit testing: snapshot testing and unit testing
 describe("MainPage tests", () => {
-  // First, snapshot test the UI to ensure during development,
+
+  // Snapshot test the UI to ensure during development,
   // the UI does not mistakingly get changed with erraneous features
   test("MainPage renders correctly", () => {
     const tree = renderer.create(<MainPage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  // Checkboxes
+  /* UNIT TESTS */
+
+  // Unit test just the checkboxes part as they are the core user input
   test("handleCheckboxClick(): changing state correctly on user input", () => {
     const wrapper = shallow(<MainPage />);
 
@@ -47,8 +50,10 @@ describe("MainPage tests", () => {
     expect(wrapper.state("checkboxes")["designChecked"]).toEqual(true);
   });
 
-  // Filtering data works: correct filters and less than <3
-  test("Data is filtered properly based on useri input", () => {
+    /* INTEGRATION TESTS */
+
+  // Integrate checkboxes-input, state-changed-handling and final-data-filtering
+  test("Data is filtered properly based on user input", () => {
     const wrapper = shallow(<MainPage />);
 
     // Get the 'strategy' checkbox and simulate a click on it
@@ -97,4 +102,5 @@ describe("MainPage tests", () => {
       projectsByCountrySecond
     );
   });
+
 });

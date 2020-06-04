@@ -4,7 +4,8 @@ import App from "../App";
 import PageNavbar from "../components/navbar/PageNavbar";
 import MainPage from "../components/main_page/MainPage";
 
-// Test that the components are successfully in React
+// Just a small basic integration test
+// Test that the components are successfully integrated together (no errors in either) in React
 describe("App Testing", () => {
   test("Test Navbar and Main Page are in the app", () => {
     const wrapper = shallow(<App />);

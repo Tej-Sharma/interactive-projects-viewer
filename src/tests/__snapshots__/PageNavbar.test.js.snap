@@ -17,7 +17,7 @@ exports[`PageNavbar tests PageNavbar renders correctly 1`] = `
         width="45"
       />
        
-      Our Projects
+      Projects
     </a>
     <button
       aria-controls="responsive-navbar-nav"
@@ -43,16 +43,25 @@ exports[`PageNavbar tests PageNavbar renders correctly 1`] = `
         className="navbar-nav"
         onKeyDown={[Function]}
       >
-        <a
-          className="nav-link"
-          data-rb-event-key="https://github.com/Trollgen-Studios"
-          href="https://github.com/Trollgen-Studios"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          target="_blank"
+        <div
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
         >
-          Made by Tejas
-        </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="https://github.com/Trollgen-Studios"
+            href="https://github.com/Trollgen-Studios"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            target="_blank"
+          >
+            Made by Tejas
+          </a>
+        </div>
       </div>
     </div>
   </nav>

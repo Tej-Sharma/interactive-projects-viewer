@@ -11,11 +11,11 @@
   right: 0;
   bottom: 0;
 
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
+  -webkit-animation: fadein 2s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 2s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 2s ease-in-out; /* Opera < 12.1 */
+  animation: fadein 2s ease-in-out;
 }
 
 /* Already responsive for mobile, need to optimize it for desktop */

@@ -12,9 +12,9 @@ describe("PageNavbar tests", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  // Unit test
+  // Unit test to make sure correct 
   test("Correct text exists", () => {
     const wrapper = shallow(<PageNavbar />);
-    expect(wrapper.text()).toContain("Our ProjectsMade by Tejas");
+    expect(wrapper.text()).toContain("Projects");
   });
 });

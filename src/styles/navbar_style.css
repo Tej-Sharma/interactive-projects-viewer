@@ -1,0 +1,35 @@
+#pageNavbarTop {
+  background-color: #080;
+  animation: changeColour 10s linear 2s infinite alternate;
+}
+
+@keyframes changeColour {
+  0%,
+  15% {
+background-color: #080;
+  }
+  16%,
+  30% {
+background-color: #F98A01;
+  }
+  31%,
+  45% {
+background-color: #C61F83;
+  }
+  46%,
+  60% {
+background-color: #DE9914;
+  }
+  61%,
+  75% {
+background-color: #1EB6DC;
+  }
+  76%,
+  90% {
+background-color: #0060A1;
+  }
+  91%,
+  100% {
+background-color: #080;
+  }
+}

@@ -3,10 +3,11 @@
 exports[`MainPage tests MainPage renders correctly 1`] = `
 <div>
   <div
-    className="mb-3"
+    className="react-reveal mb-3"
     style={
       Object {
         "margin": "8px 12px",
+        "opacity": undefined,
       }
     }
   >

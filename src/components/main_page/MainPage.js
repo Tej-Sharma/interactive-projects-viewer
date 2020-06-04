@@ -10,6 +10,9 @@ import projectsData from "../../data/projects";
 // For posting requests to the backend server
 import axios from "axios";
 
+import Jump from 'react-reveal/Jump';
+import Roll from 'react-reveal/Roll';
+
 export class MainPage extends Component {
   constructor(props) {
     super(props);
@@ -142,48 +145,52 @@ export class MainPage extends Component {
   render() {
     return (
       <div>
-        <div
-          key="inline-checkbox"
-          className="mb-3"
-          style={{ margin: "8px 12px" }}
-        >
-          <Form.Check
-            inline
-            label="Strategy"
-            name="strategyChecked"
-            type="checkbox"
-            id="strategyCheckedBox"
-            checked={this.state.checkboxes["strategyChecked"]}
-            onChange={this.handleCheckboxClick}
-          />
-          <Form.Check
-            inline
-            label="Engineering"
-            name="engineeringChecked"
-            type="checkbox"
-            id="engineeringCheckedBox"
-            checked={this.state.checkboxes["engineeringChecked"]}
-            onChange={this.handleCheckboxClick}
-          />
-          <Form.Check
-            inline
-            label="Infrastructure"
-            name="infrastructureChecked"
-            type="checkbox"
-            id="infrastructureCheckedBox"
-            checked={this.state.checkboxes["infrastructureChecked"]}
-            onChange={this.handleCheckboxClick}
-          />
-          <Form.Check
-            inline
-            label="Design"
-            name="designChecked"
-            type="checkbox"
-            id="designCheckedBox"
-            checked={this.state.checkboxes["designChecked"]}
-            onChange={this.handleCheckboxClick}
-          />
-        </div>
+        <Roll left>
+          <div
+            key="inline-checkbox"
+            className="mb-3"
+            style={{ margin: "8px 12px" }}
+          >
+            <Form.Check
+              inline
+              label="Strategy"
+              name="strategyChecked"
+              type="checkbox"
+              id="strategyCheckedBox"
+              checked={this.state.checkboxes["strategyChecked"]}
+              onChange={this.handleCheckboxClick}
+            />
+            <Form.Check
+              inline
+              label="Engineering"
+              name="engineeringChecked"
+              type="checkbox"
+              id="engineeringCheckedBox"
+              checked={this.state.checkboxes["engineeringChecked"]}
+              onChange={this.handleCheckboxClick}
+            />
+            <Form.Check
+              inline
+              label="Infrastructure"
+              name="infrastructureChecked"
+              type="checkbox"
+              id="infrastructureCheckedBox"
+              checked={this.state.checkboxes["infrastructureChecked"]}
+              onChange={this.handleCheckboxClick}
+            />
+            <Form.Check
+              inline
+              label="Design"
+              name="designChecked"
+              type="checkbox"
+              id="designCheckedBox"
+              checked={this.state.checkboxes["designChecked"]}
+              onChange={this.handleCheckboxClick}
+            />
+            
+          </div>
+        </Roll>
+
         <MapDisplay projectsByCountry={this.state.projectsByCountry} />
       </div>
     );
