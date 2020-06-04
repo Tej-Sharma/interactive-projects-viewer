@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNavbar tests PageNavbar renders correctly 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand navbar-dark bg-dark fixed-top"
+  >
+    <a
+      className="navbar-brand"
+      href="#home"
+    >
+      <img
+        alt=""
+        className="d-inline-block align-top"
+        height="45"
+        src="example_studio42_logo.svg"
+        width="45"
+      />
+       
+      Our Projects
+    </a>
+    <button
+      aria-controls="responsive-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <div
+        className="mr-auto navbar-nav"
+        onKeyDown={[Function]}
+      />
+      <div
+        className="navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="https://github.com/Trollgen-Studios"
+          href="https://github.com/Trollgen-Studios"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          target="_blank"
+        >
+          Made by Tejas
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

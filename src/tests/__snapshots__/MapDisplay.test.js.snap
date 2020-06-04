@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapDisplay tests MapDisplay renders correctly 1`] = `
+<div
+  className="map-parent-container"
+>
+  <div
+    className="map-parent-content"
+  >
+    <svg
+      className="rsm-svg map"
+      viewBox="0 0 800 600"
+    >
+      <g
+        className="rsm-geographies "
+      />
+    </svg>
+  </div>
+</div>
+`;

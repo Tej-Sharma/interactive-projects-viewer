@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import logo from "../../example_studio42_logo.svg";
 
 export class PageNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar
-          collapseOnSelect
-          bg="dark"
-          variant="dark"
-          fixed="top"
-        >
-          <Navbar.Brand href="">View Studio42's projects </Navbar.Brand>
+        <Navbar collapseOnSelect bg="dark" variant="dark" fixed="top">
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={logo}
+              width="45"
+              height="45"
+              className="d-inline-block align-top"
+            />{" "}
+            Our Projects
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>

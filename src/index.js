@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Tailwind custom CSS
 import "./styles/main.css";
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
