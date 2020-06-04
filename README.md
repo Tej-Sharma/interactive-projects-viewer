@@ -1,5 +1,7 @@
 # Studio 42 Project Viewer - Fullstack Technical Test
 
+![Screenshot of the frontend](https://github.com/Trollgen-Studios/studio42-projects-viewer/blob/master/frontendScreenshot.JPG)
+
 My solution for the fullstack technical test.
 
 ## Features and stack
