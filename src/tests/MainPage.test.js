@@ -2,10 +2,11 @@ import React from "react";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import MainPage from "../components/main_page/MainPage";
+import axios from "axios";
+import MockAdapter from "axios-mock-adapter";
 
 // Main Page's unit testing: snapshot testing and unit testing
 describe("MainPage tests", () => {
-
   // Snapshot test the UI to ensure during development,
   // the UI does not mistakingly get changed with erraneous features
   test("MainPage renders correctly", () => {
@@ -15,7 +16,10 @@ describe("MainPage tests", () => {
 
   /* UNIT TESTS */
 
-  // Unit test just the checkboxes part as they are the core user input
+  // filterData() will be used in the integration testing with checkboxes,
+  // loadDataFromDB() retrieves data from backend, so that will be part of integration as well
+
+  // Unit test the checkboxes part as they are the core user input
   test("handleCheckboxClick(): changing state correctly on user input", () => {
     const wrapper = shallow(<MainPage />);
 
@@ -50,7 +54,19 @@ describe("MainPage tests", () => {
     expect(wrapper.state("checkboxes")["designChecked"]).toEqual(true);
   });
 
-    /* INTEGRATION TESTS */
+  /* INTEGRATION TESTS */
+
+  // Mock Axios and test that fetching of the function 'loadDataFromDB'
+  // Here a testLoadDataFromDB() will be used to better compare values (requires a promise)
+  test("Projects data loading from MongoDB", () => {
+    const data = { response: "hello" };
+    var mock = new MockAdapter(axios);
+    mock.onGet("http://localhost:5000").reply(200, data);
+
+    const wrapper = shallow(<MainPage />);
+
+    expect(wrapper.instance().testLoadDataFromDB()).resolves.toEqual(data);
+  });
 
   // Integrate checkboxes-input, state-changed-handling and final-data-filtering
   test("Data is filtered properly based on user input", () => {
@@ -102,5 +118,4 @@ describe("MainPage tests", () => {
       projectsByCountrySecond
     );
   });
-
 });

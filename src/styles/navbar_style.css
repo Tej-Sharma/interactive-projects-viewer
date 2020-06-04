@@ -6,30 +6,30 @@
 @keyframes changeColour {
   0%,
   15% {
-background-color: #080;
+    background-color: #080;
   }
   16%,
   30% {
-background-color: #F98A01;
+    background-color: #f98a01;
   }
   31%,
   45% {
-background-color: #C61F83;
+    background-color: #c61f83;
   }
   46%,
   60% {
-background-color: #DE9914;
+    background-color: #de9914;
   }
   61%,
   75% {
-background-color: #1EB6DC;
+    background-color: #1eb6dc;
   }
   76%,
   90% {
-background-color: #0060A1;
+    background-color: #0060a1;
   }
   91%,
   100% {
-background-color: #080;
+    background-color: #080;
   }
 }

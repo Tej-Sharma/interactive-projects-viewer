@@ -109,7 +109,10 @@ export class MapDisplay extends Component {
                                   </p>
                                 ))
                               ) : (
-                                <p> No projects were found for this country. </p>
+                                <p>
+                                  {" "}
+                                  No projects were found for this country.{" "}
+                                </p>
                               )}
                             </Popover.Content>
                           </Popover>

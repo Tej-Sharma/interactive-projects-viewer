@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import logo from "../../example_studio42_logo.svg";
-import Zoom from 'react-reveal/Zoom';
+import Zoom from "react-reveal/Zoom";
 
 export class PageNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect bg="dark" variant="dark" fixed="top" >
+        <Navbar collapseOnSelect bg="dark" variant="dark" fixed="top">
           <Navbar.Brand href="#home">
             <img
               alt=""

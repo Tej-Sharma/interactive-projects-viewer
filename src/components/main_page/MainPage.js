@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import MapDisplay from "./page_components/MapDisplay";
-
 // React bootstrap componenets
 import Form from "react-bootstrap/Form";
-
 // Retrieve the projects data from the JSON file
 import projectsData from "../../data/projects";
-
 // For posting requests to the backend server
 import axios from "axios";
 
-import Jump from 'react-reveal/Jump';
-import Roll from 'react-reveal/Roll';
+import Roll from "react-reveal/Roll";
 
 export class MainPage extends Component {
   constructor(props) {
@@ -63,11 +59,24 @@ export class MainPage extends Component {
       .catch((err) => console.log("Error posting data"));
   }
 
+  // Load DB for integration TESTING only, only used in MainPage.test.js to test
+  // frontend (axios)/backend(express) integration
+  testLoadDataFromDB() {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "GET",
+      }).then(({ status, data }) => {
+        return status;
+      });
+    });
+  }
+
   /**
    * Post a request to MongoDB to add all of the projects
    * Load data from the JSON and then convert it to a MongoDB model and then push to the DBs
    * NOTE: do not call this method more than once as this will lead to duplicate
-   * data being added
+   * data being added (it is just a one-time helper method, but I've included it here
+   * to show how I did it orignally)
    */
   pushDataToDB() {
     console.log(projectsData.projects);
@@ -187,7 +196,6 @@ export class MainPage extends Component {
               checked={this.state.checkboxes["designChecked"]}
               onChange={this.handleCheckboxClick}
             />
-            
           </div>
         </Roll>
 

@@ -12,7 +12,7 @@ describe("PageNavbar tests", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  // Unit test to make sure correct 
+  // Unit test to make sure correct
   test("Correct text exists", () => {
     const wrapper = shallow(<PageNavbar />);
     expect(wrapper.text()).toContain("Projects");
