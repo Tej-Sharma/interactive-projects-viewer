@@ -1,4 +1,4 @@
-# Studio 42 Project Viewer - Fullstack Technical Test
+# Studio 42 Project Viewer
 
 ![Screenshot of the frontend](https://github.com/Trollgen-Studios/studio42-projects-viewer/blob/master/frontendScreenshot.JPG)
 
