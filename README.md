@@ -2,8 +2,6 @@
 
 ![Screenshot of the frontend](https://github.com/Trollgen-Studios/studio42-projects-viewer/blob/master/frontendScreenshot.JPG)
 
-My solution for the fullstack technical test.
-
 ## Features and stack
 
 Frontend:
