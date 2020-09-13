@@ -19,7 +19,6 @@ Tests:
 - Unit tests as well as integration tests
 - Jest / Enzyme / react-test-renderer /axios-mock-adapter
 
-As the app is fairly simple, I decided not to take the extra time to add E2E tests as the integration tests covered all of the functionalities.
 
 ## Running the app
 
@@ -32,7 +31,7 @@ cd ..
 yarn install
 ```
 
-Then, simply startup both the frontend and the backend (just make sure to start the backend before the frontend or else you will have to refresh the frontend once), and the app is good to go
+Then, simply startup both the frontend and the backend, and the app is good to go
 ```
 cd backend
 node server
@@ -40,4 +39,6 @@ cd ..
 yarn start
 ```
 
-Please feel free to contact me if any problems in the running of the app should arise.
+## Important Note
+
+For the MongoDB backend, make sure to replace the asteriked text with your own MongoDB url.
